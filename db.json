@@ -31,11 +31,36 @@
       "senha": "545648978975121"
     }
   ],
-  "comments": [
+  "produtos": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nome": "Agua C/GAS",
+      "valor": 5.5
+    },
+    {
+      "id": 2,
+      "nome": "Agua S/GAS",
+      "valor": 5.0
+    },
+    {
+      "id": 3,
+      "nome": "HEINKEN 600ML",
+      "valor": 12.00
+    },
+    {
+      "id": 4,
+      "nome": "BATATA FRITA",
+      "valor": 17.9
+    },
+    {
+      "id": 5,
+      "nome": "BOLINHA DE PEIXE",
+      "valor": 13.90
+    },
+    {
+      "id": 6,
+      "nome": "PASTEL DE QUEIJO",
+      "valor": 11.00
     }
   ],
   "profile": {

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationModule } from './navigation/navigation.module';
 import { ClientesModule } from './pages/clientes/clientes.module';
-import { ProdutosComponent } from './pages/produtos/produtos.component';
+import { ProdutosComponent } from './pages/produtos/produtos-list/produtos-list.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 
 @NgModule({
