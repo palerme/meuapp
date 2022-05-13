@@ -1,24 +1,17 @@
-// import { CommonModule } from "@angular/common";
-// import { HttpClientModule } from "@angular/common/http";
-// import { NgModule } from "@angular/core";
-// import { RouterModule } from "@angular/router";
-// import { ProdutosListComponent } from "./produtos-list/produtos-list.component";
-
-// @NgModule({
-//     declarations: {
-//         ProdutosListComponent      
-//     },
-//     imports: {
-//         CommonModule,
-//         HttpClientModule,
-//         RouterModule
-//     },
-//     exports: {
-//         HttpClientModule,
-//         RouterModule
-//     }
-// })
-// export class ProdutosModule { }
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ProdutosListComponent } from './produtos-list/produtos-list.component';
+import { ProdutosFormComponent } from './produtos-form/produtos-form.component';
 
 
-/*IREI IMPLEMENTAR APÓS TERMINAR O CLIENTE FORMS*/
+
+@NgModule({
+  declarations: [
+    ProdutosListComponent,
+    ProdutosFormComponent
+  ],
+  imports: [
+    CommonModule
+  ]
+})
+export class ProdutosModule { }

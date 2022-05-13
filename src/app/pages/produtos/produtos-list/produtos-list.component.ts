@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Produtos } from '../shared/produto.model';
-import { ProdutosService } from '../shared/produtos.servicos';
 
 @Component({
   selector: 'jg-produtos-list',
@@ -9,19 +7,9 @@ import { ProdutosService } from '../shared/produtos.servicos';
 })
 export class ProdutosListComponent implements OnInit {
 
-  produto: Produtos[] = [];
-  
-  constructor(private service: ProdutosService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.findAll();
-  }
-
-  findAll(): void {
-    this.service.findAll().subscribe(
-      produto => this.produto = produto,
-      error => alert('Erro ao carregar a lista')
-    )
   }
 
 }
