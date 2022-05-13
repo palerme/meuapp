@@ -1,3 +1,5 @@
+import { ProdutoService } from './../shared/produtos.servicos';
+import { Produtos } from './../shared/produtos.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutosListComponent implements OnInit {
 
-  constructor() { }
+  produtos: Produtos[] = [];
+
+  constructor(private service: ProdutoService) { }
 
   ngOnInit(): void {
+    this.findAll();
+  }
+
+  findAll(): void{
+    this.service.findAll().subscribe(
+      produtos => this.produtos = produtos,
+      error => alert('Não foi possível carregar a lista')
+    )
   }
 
 }

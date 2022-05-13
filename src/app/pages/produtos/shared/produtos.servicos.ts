@@ -12,6 +12,6 @@ export class ProdutoService {
     constructor (private http:HttpClient) {}
 
     findAll(): Observable<Produtos[]>{
-        return this.http.get<Produtos[]>("http:/localhost:300/produtos")
+        return this.http.get<Produtos[]>("http://localhost:3000/produtos")
     }
 }
