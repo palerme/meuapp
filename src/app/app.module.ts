@@ -7,6 +7,7 @@ import { NavigationModule } from './navigation/navigation.module';
 import { ClientesModule } from './pages/clientes/clientes.module';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ProdutosModule } from './pages/produtos/produtos.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProdutosModule } from './pages/produtos/produtos.module';
     AppRoutingModule,
     NavigationModule,
     ClientesModule,
-    ProdutosModule
+    ProdutosModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

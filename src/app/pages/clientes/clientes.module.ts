@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { ClienteFormComponent } from './cliente-form/client-form.component';
 import { ClientesListComponent } from './cliente-list/cliente-list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ClientesListComponent } from './cliente-list/cliente-list.component';
   imports: [
     CommonModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   exports: [
     HttpClientModule,
